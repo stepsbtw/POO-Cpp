@@ -40,6 +40,12 @@ int main(){
     a1->somVirtual();
 
     Animal* a2 = new Gato();
-    a2->somVirtual(); // caso o gato nao tenha somVirtual implementado, vai rodar o generico.
+    a2->somVirtual();
+    // caso o gato nao tenha somVirtual implementado, vai rodar o generico.
 
+    Gato g1;
+    g1.somVirtual(); // mesma coisa que so som!
+
+    delete a1;
+    delete a2;
 }
